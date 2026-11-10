@@ -1,0 +1,30 @@
+---
+title: "ICA"
+author: "Zicen Li"
+date: "2026-11-09"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 01_input_data
+
+```{r input_data}
+data_all<-read.csv("01_input_data/data_all.csv")
+gene_annotation<-read.csv("01_input_data/gene_annotation.csv")
+sample_annotation<-read.csv("01_input_data/sample_annotation.csv")
+genelist<-read.delim("01_input_data/genelist_s2931375.txt")
+```
+
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
